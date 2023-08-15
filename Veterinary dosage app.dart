@@ -52,10 +52,10 @@ class _AnimalMedicineScreenState extends State<AnimalMedicineScreen> {
   }
 
   double _parseWeight(String text) {
-    // Zamień przecinek na kropkę, jeśli istnieje
+   
     String normalizedText = text.replaceAll(',', '.');
 
-    // Spróbuj sparsować wartość jako double
+
     return double.tryParse(normalizedText) ?? 0;
   }
 

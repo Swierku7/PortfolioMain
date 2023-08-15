@@ -201,7 +201,6 @@ for file_name in files:
             lvef_mod_a2c) if lvef_mod_a2c else ""
         output += "SV MOD A2C Objętość wyrzutowa serca w projekcji A2C = {}\n".format(sv_mod_a2c) if sv_mod_a2c else ""
         output += "CO MOD A2C Objętość minutowa serca w projekcji A2C = {}\n".format(co_mod_a2c) if co_mod_a2c else ""
-        # Kontynuuj dodawanie pozostałych zmiennych
 
         output += "\nPOMIARY LEWEJ I PRAWEJ KOMORY\n"
         output += "PROJEKCJE M-Mode\n"
@@ -229,6 +228,7 @@ for file_name in files:
         output += "\nPomiar rytmu serca\n"
         output += "Czas cyklu = {}\n".format(time) if time else ""
         output += "Częstość rytmu = {}\n".format(hr) if hr else ""
+        # przykładowa opisowa część
 
         output += """Wnioski: W badaniu uwidoczniono pogrubienie płatków
         zastawki dwudzielnej z niewielką niedomykalnością. Zastawka trójdzielna
@@ -278,8 +278,8 @@ for file_name in files:
 # Tworzenie wiadomości e-mail
 #msg = MIMEText(output)
 #msg['Subject'] = 'Raport wyników badania'
-#msg['From'] = 'michal.swierk.sw@gmail.com'
-#msg['To'] = 'michal.swierk.sw@gmail.com'
+#msg['From'] = 'mail'
+#msg['To'] = 'mail'
 
 # Konfiguracja serwera SMTP
 #smtp_server = 'smtp.gmail.com'
